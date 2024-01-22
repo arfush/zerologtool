@@ -81,7 +81,7 @@ type ConsoleOrderedWriter struct {
 }
 
 // NewZerologConsoleOrderedWriter creates and initializes a new ConsoleOrderedWriter.
-func NewZerologConsoleOrderedWriter(options ...func(w *ConsoleOrderedWriter)) ConsoleOrderedWriter {
+func NewConsoleOrderedWriter(options ...func(w *ConsoleOrderedWriter)) ConsoleOrderedWriter {
 	w := ConsoleOrderedWriter{
 		Out:        os.Stdout,
 		TimeFormat: consoleDefaultTimeFormat,
